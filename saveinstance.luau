@@ -2104,23 +2104,7 @@ local GLOBAL_ENV = getgenv and getgenv() or _G or shared
 
 local function synsaveinstance(CustomOptions, CustomOptions2)
   
-	for i,v in CustomOptions do 
-		print("customoptions:", i,v)
-		if type(v) == "table" then 
-			for j,k in v do 
-				print(i,j,k)
-			end
-		end
-	end
-
-    for i,v in CustomOptions2 do 
-		print("customoptions2:", i,v)
-		if type(v) == "table" then 
-			for j,k in v do 
-				print(i,j,k)
-			end
-		end
-	end
+	
 	if GLOBAL_ENV.USSI then
 		return
 	end
